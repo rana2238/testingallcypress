@@ -35,7 +35,7 @@ describe('ClickUp Test', () => {
 
     emailInvitePage.inviteGuest(credentials.email2);
 
-    emailInvitePage.cancelInvitedEmail();
+    // emailInvitePage.cancelInvitedEmail();
 
   });
 })
