@@ -3,8 +3,19 @@ const { defineConfig } = require('cypress');
 module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
+    reportPageTitle: 'Custom Title',
     charts: true,
-    reportPageTitle: 'custom-title',
+    chartsSettings: {
+      // Customize the chart settings
+      showPassed: true,
+      showFailed: true,
+      showPending: true,
+      showSkipped: false,
+      chartHeight: 300,
+      chartWidth: 500,
+      chartColors: ['#00aaff', '#ff0000', '#ffaa00'],
+      // ... other available chart settings
+    },
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: false,
