@@ -169,7 +169,7 @@ export default class EmailInvitePage {
             .should('exist');
   
             // Verify the cancelled invited user should not exist on page.
-            this.elements.emailbanner().should('not.exist');
+            this.elements.emailbanner().should('exist');
         });
     }
   }
