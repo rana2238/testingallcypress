@@ -15,7 +15,7 @@ describe('ClickUp Test', () => {
       
     });
     Cypress.on('uncaught:exception', () => {
-      // Ignore the uncaught exception
+      
       return false;
     });
   });
