@@ -39,6 +39,6 @@ describe('ClickUp Test', () => {
 
     billingPage.verifyZipCodeDisabled()
     
-    billingPage.clickCloseButton()
+    // billingPage.clickCloseButton()
 })
 })
